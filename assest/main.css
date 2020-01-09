@@ -1,5 +1,70 @@
 /* COMMON */
 
+.wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	min-height: 0;
+	max-width: 1480px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.maincontent {
+	height: 100%;
+	min-height: 40.625rem;
+}
+
+.d-none {
+	display: none;
+}
+
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+	max-width: 1120px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	/* -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;*/
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		-webkit-box-pack: start;
+		-webkit-justify-content: flex-start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+	}
+}
+
+.section {
+	/* height: 100%; */
+	background-color: rgba(0, 0, 0, 0.31);
+	min-height: 40.625rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
 .txt {
 	position: relative;
 }
@@ -11,26 +76,17 @@
 	margin-left: 25px;
 }
 
-.faded-text:before {
-	content: '';
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	background: linear-gradient(transparent 50%, white);
-}
 
 /* HEADER */
 
 .hero {
-  background-image: url(/res/Imagination.png);
-  background-color: #F5F4EF;
-  background-repeat: no-repeat;
-  background-position: right;
-  height: 600px;
-  max-width: 1440px;
-  margin: 0 auto;
+	background-image: url(/res/Imagination.png);
+	background-color: #f5f4ef;
+	background-repeat: no-repeat;
+	background-position: right;
+	height: 600px;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
 .header {
@@ -49,15 +105,15 @@
 }
 
 .title {
-  margin: 100px 0 0 40px;
+	margin: 100px 0 0 40px;
 }
 
-.title-header {
-  max-width: 40%;
+.title-heading {
+	max-width: 40%;
 }
 
 .title-txt {
-  max-width: 50%;
+	max-width: 50%;
 }
 
 /* SECTION HOME */
@@ -65,14 +121,15 @@
 /* SECTION ABOUT */
 
 .about {
-  padding: 55px 0;
-  
+	padding: 55px 0;
+	background-color: #f8f8f8;
 }
 
 .txt-about {
 	margin-top: 30px;
 	max-width: 430px;
 }
+
 
 .summary-list {
 	border-radius: 20px;
@@ -89,50 +146,46 @@
 /* SECTION TREATMENTS */
 
 .treatments {
-  padding: 60px 0;
-
+	padding: 60px 0;
+	background-color: #f5f4ef;
 }
 
 /* SECTION EDUCATION */
 
 .education {
-  padding: 50px 0;
+	padding: 50px 0;
 }
 
 .edu-list {
-  position: relative;
-  text-align: end;
-  margin-top: 100px;
+	position: relative;
+	text-align: end;
+	margin-top: 100px;
 }
 
 .edu-pic-holder {
-  max-width: 535px;
-  width: 100%;
+	/* max-width: 535px;
+	width: 100%; */
 }
 
-.edu-img{
-  border-radius: 20px;
-  margin-top: 50px;
-  margin-right: 67px;
-  margin-left: 50px;
+.edu-img {
+	border-radius: 20px;
+	margin-top: 50px;
+	margin-right: 67px;
+	margin-left: 50px;
 }
 
 /* SECTION PRICE */
 
 .price-text {
-  text-align: center;
-  width: 100%;
-  
-  
-}
-
-
-/* SECTION CONTACTS */
-
-section {
-	/* height: 100%; */
+	text-align: center;
 	width: 100%;
 }
+
+/* SECTION CONTACTS */
+.footer {
+	background-color: #f8f8f8;
+}
+
 /* NORMALISE AND OTHERS */
 
 @media (max-width: 1200px) {
@@ -262,73 +315,6 @@ p {
 	padding: 0;
 }
 
-.wrapper {
-	width: 100%;
-	height: 100%;
-	position: relative;
-	min-height: 0;
-}
-
-.maincontent {
-	height: 100%;
-	min-height: 40.625rem;
-}
-
-.d-none {
-	display: none;
-}
-
-.container {
-	margin: 0 auto;
-	position: relative;
-	width: 100%;
-	max-width: 1120px;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	/* -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;*/
-}
-
-@media screen and (max-width: 768px) {
-	.container {
-		-webkit-box-pack: start;
-		-webkit-justify-content: flex-start;
-		-ms-flex-pack: start;
-		justify-content: flex-start;
-	}
-}
-
-.section {
-	/* height: 100%; */
-	background-color: rgba(0, 0, 0, 0.31);
-	min-height: 40.625rem;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	flex-direction: column;
-}
-
-.section-heading {
-	transform: translate(-12%);
-	background-color: white;
-}
-
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -428,9 +414,9 @@ pre {
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
 a {
-  background-color: transparent;
-  text-decoration: none;
-  color: inherit;
+	background-color: transparent;
+	text-decoration: none;
+	color: inherit;
 	/* 1 */
 	-webkit-text-decoration-skip: objects;
 	/* 2 */
