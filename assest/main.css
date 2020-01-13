@@ -66,7 +66,18 @@ section, footer {
   position: relative;
   font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 14px;
+  position: relative;
 }
+
+.faded-txt::before {
+content: '';
+width: 100%;
+height: 100%;
+background: linear-gradient(to bottom, transparent, #f8f8f8);
+position: absolute;
+top: 0;
+left: 0;
+} 
 
 .txt-l {
   font-size: 1.125rem;
@@ -205,6 +216,10 @@ section, footer {
   background-color: #f5f4ef;
 }
 
+.treatments .faded-txt::before {
+  background: linear-gradient(to bottom, transparent, #f5f4ef);
+}
+
 .treatmets-subtitle {
   color: #3f9d63;
   margin-bottom: 4%;
@@ -239,6 +254,14 @@ section, footer {
   text-align: end;
   padding-right: 4%;
   margin-top: auto;
+}
+
+.edu-list {
+  position: relative;
+}
+
+.education .faded-txt::before {
+  background: linear-gradient(to bottom, transparent, #ffffff);
 }
 
 .edu-list-item {
@@ -444,6 +467,11 @@ input {
   .container {
     flex-direction: column;
     padding: 0 20px;
+    position: relative;
+  }
+
+  h3 {
+    position: absolute;
   }
 
   .demi-column {
