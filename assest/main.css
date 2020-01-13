@@ -68,6 +68,10 @@ section, footer {
   font-size: 14px;
   position: relative;
 }
+.faded-txt{
+  max-height: 35vw;
+  overflow: hidden;
+}
 
 .faded-txt::before {
 content: '';
@@ -225,12 +229,6 @@ left: 0;
   margin-bottom: 4%;
 }
 
-.treatmets-txt,
-.edu-list {
-  max-height: 35vw;
-  overflow: hidden;
-}
-
 .treatmets-txt > * {
   margin-bottom: 2%;
 }
@@ -258,6 +256,7 @@ left: 0;
 
 .edu-list {
   position: relative;
+  margin-top: 20%;
 }
 
 .education .faded-txt::before {
